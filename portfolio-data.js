@@ -105,7 +105,7 @@ window.portfolioData = { links: portfolioLinks, files: {
   "/home/george/projects/ecoloop/overview.md": {
     type: "file",
     description: "EcoLoop project overview.",
-    content: "EcoLoop is a sustainability-focused marketplace developed through the Power Learn Project Kenya bootcamp and connected to SDG 12.\n\nIt helps unused items find new homes through exchanges, messaging, impact tracking, and an AI EcoBot.\n\nGitHub: https://github.com/j-ojey/Ecoloop\nLive: https://ecoloop-three.vercel.app",
+    content: "EcoLoop is a sustainability-focused marketplace developed through the Power Learn Project Kenya bootcamp and connected to SDG 12.\n\nIt helps unused items find new homes through exchanges, messaging, impact tracking, and an AI EcoBot.\n\nGitHub: https://github.com/j-ojey/Ecoloop",
   },
   "/home/george/projects/ecoloop/technologies.md": {
     type: "file",
