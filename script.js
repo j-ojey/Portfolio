@@ -14,13 +14,15 @@ const terminalPrompt = document.querySelector("#terminal-prompt");
 const dnaSignal = document.querySelector("#dna-signal");
 const dnaSignature = document.querySelector("#dna-signature");
 const navigationLinks = [...document.querySelectorAll("nav a")];
+const mobileMenuToggle = document.querySelector("#mobile-menu-toggle");
+const primaryNavigation = document.querySelector("#primary-navigation");
 const contactRequestForm = document.querySelector("#contact-request-form");
 const numberLabTrigger = document.querySelector("#number-lab-trigger");
 const numberLabModal = document.querySelector("#number-lab-modal");
 const numberLabClose = document.querySelector("#number-lab-close");
 const numberLabContent = document.querySelector("#number-lab-content");
 
-if (!traitButtons.length || !traitOutput || !themeToggle || !themeLabel || !terminalLauncher || !terminal || !terminalClose || !terminalMinimize || !terminalMaximize || !terminalForm || !terminalInput || !terminalScreen || !terminalPrompt || !dnaSignal || !dnaSignature || !contactRequestForm || !numberLabTrigger || !numberLabModal || !numberLabClose || !numberLabContent) {
+if (!traitButtons.length || !traitOutput || !themeToggle || !themeLabel || !terminalLauncher || !terminal || !terminalClose || !terminalMinimize || !terminalMaximize || !terminalForm || !terminalInput || !terminalScreen || !terminalPrompt || !dnaSignal || !dnaSignature || !mobileMenuToggle || !primaryNavigation || !contactRequestForm || !numberLabTrigger || !numberLabModal || !numberLabClose || !numberLabContent) {
   throw new Error("Portfolio interactive controls are missing from the page.");
 }
 
@@ -55,6 +57,21 @@ themeToggle.addEventListener("click", () => {
   const nextTheme = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
   localStorage.setItem("portfolio-theme", nextTheme);
   setTheme(nextTheme);
+});
+
+function closeMobileNavigation() {
+  document.body.classList.remove("mobile-menu-open");
+  mobileMenuToggle.setAttribute("aria-expanded", "false");
+}
+
+mobileMenuToggle.addEventListener("click", () => {
+  const isOpen = document.body.classList.toggle("mobile-menu-open");
+  mobileMenuToggle.setAttribute("aria-expanded", String(isOpen));
+});
+
+navigationLinks.forEach((link) => link.addEventListener("click", closeMobileNavigation));
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") closeMobileNavigation();
 });
 
 const { links, files, projectNames } = window.portfolioData;
