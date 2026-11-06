@@ -242,7 +242,7 @@ body.number-lab-open { overflow: hidden; }
   .site-header { padding: 20px; }
   .brand-copy { display: none; }
   .mobile-menu-toggle { display: inline-flex; margin-left: auto; }
-  nav { background: var(--paper); border-bottom: 1px solid var(--line); display: none; flex-direction: column; gap: 0; left: 0; padding: 10px 20px 14px; position: absolute; right: 0; top: 100%; }
+  nav { background: var(--paper); border: 1px solid var(--line); box-shadow: 0 12px 24px #17171718; display: none; flex-direction: column; gap: 0; padding: 10px 20px 14px; position: absolute; right: 20px; top: calc(100% + 8px); width: min(280px, calc(100vw - 40px)); }
   body.mobile-menu-open nav { display: flex; }
   nav a { border-bottom: 1px solid var(--line); padding: 13px 0; }
   nav a:last-child { border-bottom: 0; }
