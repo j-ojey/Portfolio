@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="George Kihoro Wainaina — independent developer exploring software engineering and cloud infrastructure." />
+    <title>GW. — The Build Lab</title>
+    <link rel="stylesheet" href="styles.css?v=21" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Back to the entrance"><span class="brand-mark">GW</span><span class="brand-copy">THE BUILD LAB</span></a>
+      <nav aria-label="Primary navigation">
+        <a href="#about">About</a><a href="#skills">Toolkit</a><a href="#projects">Workshop</a><a href="#journey">Journey</a><a href="#contact">Open collaboration</a>
+      </nav>
+      <div class="header-actions"><button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false"><span aria-hidden="true">◐</span><span class="theme-toggle-label">Dark mode</span></button><span class="availability"><span></span> Available for opportunities</span></div>
+    </header>
+
+    <main id="top">
+      <section class="entrance station">
+        <div class="entrance-grid">
+          <div class="entrance-copy">
+            <p class="eyebrow">Developer / Kenya</p>
+            <h1>I don’t just write code.<br /><em>I build things that solve problems.</em></h1>
+            <p class="lede">Exploring software engineering, cloud infrastructure, and the intersection between technology and everyday life.</p>
+            <div class="hero-actions"><a class="button button-dark" href="#projects">Explore projects <span>↗</span></a><a class="button button-outline" href="assets/George-Wainaina-CV.docx" download>Download CV <span>↓</span></a></div>
+            <div class="proof-strip" aria-label="Portfolio highlights"><span><strong>Featured builds</strong> from real questions</span><span><strong>Cloud platforms</strong> AWS · GCP · OCI</span><span><strong>Cycling-powered focus</strong> always moving</span></div>
+          </div>
+          <div class="curiosity-card build-dna">
+            <div class="card-topline"><span>THE BUILD DNA</span><span class="interactive-pill" id="dna-signal">SIGNAL: CURIOUS</span></div>
+            <p class="experiment-label">How do you approach a hard problem?</p>
+            <p class="experiment-question">Choose a signal. Your build signature will change with it.</p>
+            <div class="trait-list" role="group" aria-label="Build DNA traits">
+              <button class="trait-button is-active" data-trait="curiosity" type="button"><span>01</span> Curiosity</button>
+              <button class="trait-button" data-trait="clarity" type="button"><span>02</span> Clarity</button>
+              <button class="trait-button" data-trait="momentum" type="button"><span>03</span> Momentum</button>
+            </div>
+            <div class="dna-meter" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+            <output class="trait-output" id="trait-output" aria-live="polite"><strong>The Investigator</strong><span>Ask one more question before choosing a solution.</span></output>
+            <div class="dna-signature"><span>BUILD SIGNATURE</span><strong id="dna-signature">Questions → useful systems → better routes</strong></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="station about-station" id="about">
+        <div class="station-kicker"><span>THE ENGINEER BEHIND THE BUILDS</span><span>ABOUT</span></div>
+        <div class="two-column">
+          <div><p class="eyebrow">A short introduction</p><h2>Curiosity is a <em>technical skill.</em></h2></div>
+          <div class="body-copy"><p>I’m George Kihoro Wainaina, a Computer Science graduate and AWS re/Start trainee from Kiambu, Kenya.</p><p>I like finding the reason behind a problem, turning repeated work into a script, and making technical ideas easier to understand. My work sits between software development, cloud fundamentals, Linux, and user support.</p><p>When I step away from a screen, I cycle until my legs hurt and my body loves it.</p></div>
+        </div>
+        <div class="number-lab-hint">
+          <span class="number-lab-hint-symbol" aria-hidden="true">∑</span>
+          <div><span class="eyebrow">A tiny challenge</span><strong>Psst... I have a thing for numbers. Think you can keep up?</strong></div>
+          <button class="number-lab-trigger" id="number-lab-trigger" type="button" aria-haspopup="dialog">Enter the Number Lab <span aria-hidden="true">→</span></button>
+        </div>
+        <div class="about-metrics">
+          <div><strong>Cloud learner</strong><span>AWS re/Start · Linux · infrastructure fundamentals</span></div>
+          <div><strong>Problem solver</strong><span>Root-cause thinking · automation · clear communication</span></div>
+          <div><strong>Always moving</strong><span>Software builds, technical support, and long rides</span></div>
+        </div>
+      </section>
+
+      <section class="station toolkit-station" id="skills">
+        <div class="station-kicker"><span>THE TOOLKIT</span><span>SKILLS</span></div>
+        <div class="section-intro"><h2>Technical instruments for <em>real work.</em></h2><p>Tools I can discuss, use, and keep improving.</p></div>
+        <div class="toolkit-grid">
+          <article><h3>Build</h3><div class="tool-list"><span>Python</span><span>JavaScript</span><span>Bash</span><span>React</span><span>Node.js</span><span>Django</span></div></article>
+          <article><h3>Connect</h3><div class="tool-list"><span>TCP/IP</span><span>DNS</span><span>DHCP</span><span>CIDR</span><span>Routing</span><span>Linux</span></div></article>
+          <article><h3>Store</h3><div class="tool-list"><span>MongoDB</span><span>MySQL</span><span>RDS</span><span>SQL</span><span>Data modeling</span></div></article>
+          <article><h3>Ship</h3><div class="tool-list"><span>AWS</span><span>GCP</span><span>OCI</span><span>Git</span><span>GitHub</span><span>REST APIs</span></div></article>
+        </div>
+        <div class="exploring-bar"><span>Currently exploring</span><strong>AWS cloud architecture · infrastructure fundamentals · advanced JavaScript · software engineering practices</strong></div>
+      </section>
+
+      <section class="station workshop-station" id="projects">
+        <div class="station-kicker"><span>THE WORKSHOP</span><span>PROJECTS</span></div>
+        <div class="section-intro"><h2>Four builds. <em>Four different questions.</em></h2><p>Open the source or visit a live build where one is available.</p></div>
+        <div class="workshop-grid">
+          <article class="build-card build-card-featured"><div class="build-meta"><span>BUSINESS SYSTEM</span><span>2025</span></div><div class="featured-heading"><span class="featured-label">Featured build</span><h3>SokoTally</h3><p>Small-business bookkeeping without the spreadsheet maze. Write a transaction in English or Kiswahili and turn it into a clearer picture of the day.</p></div><div class="sokotally-flow" aria-label="SokoTally workflow"><span>Say it</span><i>→</i><span>Sort it</span><i>→</i><span>See it</span></div><div class="build-footer"><span>React · Express · MongoDB</span><a href="https://github.com/Mark-Muuo/Sokotally" target="_blank" rel="noreferrer">Explore source ↗</a></div></article>
+          <article class="build-card"><div class="build-meta"><span>SUSTAINABILITY</span><span>2025</span></div><div><h3>EcoLoop</h3><p>A marketplace that helps unused items find new homes through exchanges, messaging, impact tracking, and an AI EcoBot.</p></div><div class="build-footer"><span>React · Node · MongoDB</span><span><a href="https://ecoloop-three.vercel.app" target="_blank" rel="noreferrer">Live ↗</a> <a href="https://github.com/j-ojey/Ecoloop" target="_blank" rel="noreferrer">Code ↗</a></span></div></article>
+          <article class="build-card"><div class="build-meta"><span>AI CHAT</span><span>2025</span></div><div><h3>SmartLife AI</h3><p>An AI chat application with a React frontend, Express backend, MongoDB persistence, JWT authentication, Google OAuth, and planned Gemini integration.</p></div><div class="build-footer"><span>React · Express · MongoDB</span><span><a href="https://hack-green-wells.vercel.app" target="_blank" rel="noreferrer">Live ↗</a> <a href="https://github.com/j-ojey/Hack_Green_Wells" target="_blank" rel="noreferrer">Code ↗</a></span></div></article>
+          <article class="build-card"><div class="build-meta"><span>CIVIC TECH</span><span>2025</span></div><div><h3>dVoting</h3><p>A Django platform for elections, positions, candidates, profiles, voting history, and admin dashboards.</p></div><div class="build-footer"><span>Python · Django · SQLite</span><a href="https://github.com/j-ojey/dVoting" target="_blank" rel="noreferrer">Open ↗</a></div></article>
+        </div>
+      </section>
+
+      <section class="station flight-station" id="journey">
+        <div class="station-kicker"><span>THE FLIGHT LOG</span><span>EXPERIENCE</span></div>
+        <div class="section-intro"><h2>A path shaped by <em>hands-on learning.</em></h2></div>
+        <div class="flight-log"><div><span>2026 — NOW</span><h3>AWS re/Start participant</h3><p>Cloud, Linux, networking, security, databases, and automation training.</p></div><div><span>2025 — 2026</span><h3>B.Sc. Computer Science</h3><p>Dedan Kimathi University of Technology.</p></div><div><span>JAN — APR 2025</span><h3>IT support · Kenya Ports Authority</h3><p>Diagnosed LAN issues, supported terminal systems, configured SAP clients, VoIP phones, DNS/DHCP settings, and printers.</p></div><div><span>JUL — NOV 2025</span><h3>Software development · PLP</h3><p>Built EcoLoop with React.js and used Linux, Git, collaborative debugging, and automated project workflows.</p></div><div><span>2024 — NOW</span><h3>Certifications & community</h3><p>Oracle Certified Foundations Associate and Responsible Ethical and Computing Club member.</p></div></div>
+      </section>
+
+      <section class="station contact-station" id="contact">
+        <div class="station-kicker"><span>OPEN COLLABORATION</span><span>CONTACT</span></div>
+        <h2>Have an interesting idea?<br /><em>Let’s build something meaningful.</em></h2>
+        <div class="contact-card">
+          <div class="contact-details">
+            <a class="contact-detail" href="mailto:georgewainaina409@gmail.com"><span class="contact-icon" aria-hidden="true">@</span><span><small>Email</small><strong>georgewainaina409@gmail.com</strong></span></a>
+            <a class="contact-detail" href="tel:+254757936558"><span class="contact-icon" aria-hidden="true">⌕</span><span><small>Phone</small><strong>+254 757 936 558</strong></span></a>
+            <span class="contact-detail"><span class="contact-icon" aria-hidden="true">+</span><span><small>Location</small><strong>Kiambu, Kenya</strong></span></span>
+          </div>
+          <form class="contact-request-form" id="contact-request-form">
+            <div class="contact-form-header"><div><span>NEW MESSAGE</span><strong>Let’s build something useful.</strong></div><div class="contact-form-status"><i aria-hidden="true"></i> ONLINE <b>v1.0</b></div></div>
+            <div class="contact-form-field">
+              <input id="contact-name" name="name" type="text" autocomplete="name" placeholder="name // required" aria-label="Your name" required />
+            </div>
+            <div class="contact-form-field">
+              <input id="contact-email" name="email" type="email" autocomplete="email" placeholder="email // optional" aria-label="Your email address" />
+            </div>
+            <div class="contact-form-field">
+              <select id="contact-topic" name="topic" aria-label="Conversation topic" required>
+                <option value="" selected disabled>topic // choose one</option>
+                <option>Software development</option>
+                <option>Cloud and infrastructure</option>
+                <option>Technical support</option>
+                <option>Project collaboration</option>
+              </select>
+            </div>
+            <div class="contact-form-field">
+              <input id="contact-message" name="message" type="text" placeholder="subject // optional" aria-label="Message subject" />
+            </div>
+            <div class="contact-form-field contact-form-wide">
+              <textarea id="contact-details" name="details" rows="5" placeholder="Tell me what you’re building..." aria-label="Project details" required></textarea>
+            </div>
+            <button class="contact-form-submit" type="submit"><span aria-hidden="true">$</span> send-message</button>
+            <p class="contact-form-note">// opens your email client with the message ready to send</p>
+          </form>
+          <div class="contact-card-bottom">
+            <div class="social-block"><small>Connect with me</small><div class="social-links"><a href="https://github.com/j-ojey" target="_blank" rel="noreferrer">GitHub</a><a href="https://www.linkedin.com/in/georgekihoro" target="_blank" rel="noreferrer">LinkedIn</a><a href="assets/George-Wainaina-CV.docx" download>Download CV</a></div></div>
+            <div class="contact-action"><span class="availability"><span></span> Available for opportunities</span><a class="button button-dark" id="start-conversation" href="mailto:georgewainaina409@gmail.com?subject=Portfolio%20collaboration&body=Hi%20George%2C%0A%0A">Start a conversation ↗</a></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <button class="terminal-launcher" id="terminal-launcher" type="button" aria-controls="developer-terminal" aria-expanded="false">
+      <span aria-hidden="true">$_</span> Open workstation
+    </button>
+    <aside class="developer-terminal" id="developer-terminal" aria-label="Interactive developer terminal" hidden>
+      <div class="terminal-bar">
+        <span class="terminal-title"><i aria-hidden="true"></i> george@build-lab</span>
+        <div class="terminal-controls" aria-label="Terminal window controls">
+          <button class="terminal-control terminal-minimize" id="terminal-minimize" type="button" aria-label="Minimize terminal" title="Minimize">—</button>
+          <button class="terminal-control terminal-maximize" id="terminal-maximize" type="button" aria-label="Maximize terminal" title="Maximize">□</button>
+          <button class="terminal-control terminal-close" id="terminal-close" type="button" aria-label="Close terminal" title="Close">×</button>
+        </div>
+      </div>
+      <div class="terminal-screen" id="terminal-screen" aria-live="polite">
+        <p>Welcome to my development workstation.</p>
+        <p>Software Engineering | Cloud Computing | Problem Solving</p>
+        <p>The .md files are readable portfolio notes. Use <strong>ls</strong>, then <strong>cat &lt;file&gt;</strong> to inspect one.</p>
+        <p>Type <strong>help</strong> to see available commands.</p>
+        <div class="terminal-examples" aria-label="Example commands">
+          <button type="button" data-command="whoami">whoami</button><button type="button" data-command="ls">ls</button><button type="button" data-command="tree">tree</button><button type="button" data-command="projects">projects</button><button type="button" data-command="contact">contact</button>
+        </div>
+      </div>
+      <form class="terminal-form" id="terminal-form">
+        <label for="terminal-input" id="terminal-prompt">george@build-lab:~$</label>
+        <input id="terminal-input" name="command" type="text" autocomplete="off" spellcheck="false" aria-label="Terminal command" />
+      </form>
+    </aside>
+
+    <div class="number-lab-modal" id="number-lab-modal" role="dialog" aria-modal="true" aria-labelledby="number-lab-title" hidden>
+      <div class="number-lab-backdrop" data-number-lab-close></div>
+      <section class="number-lab-panel">
+        <div class="number-lab-window-bar">
+          <span><i aria-hidden="true"></i> number-lab.exe</span>
+          <button class="number-lab-close" id="number-lab-close" type="button" aria-label="Close Number Lab">×</button>
+        </div>
+        <div class="number-lab-content" id="number-lab-content"></div>
+      </section>
+    </div>
+
+    <script src="portfolio-data.js?v=4"></script>
+    <script src="script.js?v=18"></script>
+  </body>
+</html>
